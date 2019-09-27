@@ -74,6 +74,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.chomp
     num = input.strip.to_i
+    p num
     songs = Song.all.uniq.sort_by{|song| song.name}
     play = songs[num]
     p play
