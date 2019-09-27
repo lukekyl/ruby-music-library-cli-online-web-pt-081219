@@ -72,6 +72,7 @@ class MusicLibraryController
   end
   def play_song
     puts "Which song number would you like to play?"
+    songs = Song.all
     input = gets.chomp
     num = input.to_i
     if (1..sorted.length).include?(num)
