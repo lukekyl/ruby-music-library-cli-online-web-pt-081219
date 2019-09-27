@@ -78,6 +78,8 @@ class MusicLibraryController
     if (1..songs.length).include?(num)
       play = songs[num +2]
       puts "Playing #{play.name} by #{play.artist.name}"
+    else
+      puts "Song not included in library."
     end
   end
 end
