@@ -75,7 +75,7 @@ class MusicLibraryController
     songs = Song.all
     input = gets.chomp
     num = input.to_i
-    if input > 0 && input <= Song.all.length
+    if num > 0 && num <= Song.all.length
       sorted = songs.sort_by{|song| song.name}
       play = sorted[num - 1]
       p play.name
