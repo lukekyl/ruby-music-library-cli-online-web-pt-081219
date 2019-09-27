@@ -76,7 +76,7 @@ class MusicLibraryController
     input = gets.chomp
     num = input.to_i
     if (1..songs.length).include?(num)
-      sorted = songs.sort_by{|a, b| a.name <=> b.name}
+      sorted = songs.sort{|a, b| a.name <=> b.name}
       play = sorted[num - 1]
       p play.name
       puts "Playing #{play.name} by #{play.artist.name}"
