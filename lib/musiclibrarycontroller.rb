@@ -18,7 +18,7 @@ class MusicLibraryController
       puts "To list all of the genres in your library, enter 'list genres'."
       self.list_genres if input == "list genres"
       puts "To list all of the songs by a particular artist, enter 'list artist'."
-      self.list_songs_by_artists if input == "list artist"
+      self.list_songs_by_artist if input == "list artist"
       puts "To list all of the songs of a particular genre, enter 'list genre'."
       self.list_songs_by_genre if input == "list genre"
       puts "To play a song, enter 'play song'."
