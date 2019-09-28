@@ -21,6 +21,8 @@ class MusicLibraryController
       puts "What would you like to do?"
       input = gets.chomp
     end
+    self.list_songs if input == "list songs"
+    
   end
   def list_songs
     i = 0
