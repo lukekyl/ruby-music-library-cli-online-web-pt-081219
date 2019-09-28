@@ -22,7 +22,7 @@ class MusicLibraryController
       puts "To list all of the songs of a particular genre, enter 'list genre'."
       self.list_songs_by_genre if input == "list genre"
       puts "To play a song, enter 'play song'."
-      self.play_song if input == "play_song"
+      self.play_song if input == "play song"
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
       input = gets.chomp
